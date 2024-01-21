@@ -2,14 +2,6 @@
 export default {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
-
-module.exports = {
-  theme: {
     extend: {
       fontFamily: {
         customFont: ['Bohemian Soul', "sans-serif"],
@@ -17,5 +9,5 @@ module.exports = {
       },
     },
   },
-  // Other Tailwind configuration settings
-};
+  plugins: [],
+}
