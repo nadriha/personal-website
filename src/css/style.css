@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Bohemian Soul;
+        font-weight: 500;
+        src: url(/assets/fonts/bohemiansoul.otf) format("opentype");
+      }
+}

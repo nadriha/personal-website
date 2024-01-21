@@ -7,3 +7,15 @@ export default {
   plugins: [],
 }
 
+
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        customFont: ['Bohemian Soul', "sans-serif"],
+        // Add more custom font families as needed
+      },
+    },
+  },
+  // Other Tailwind configuration settings
+};
