@@ -7,10 +7,10 @@ function addDoodle(name, positioin, yVal, xVal, hVal, container){
     
     const doodleElement = document.createElement("img");
     if (positioin === "top"){
-        doodleElement.src = "assets/popup/"+name+".png";
+        doodleElement.src = "/"+name+".png";
         doodleElement.classList.add('absolute',`-top-[${yVal}px]`, `-right-${xVal}`, `h-[${hVal}px]`)
     } else {
-        doodleElement.src = "assets/popup/"+name+".png";
+        doodleElement.src = "/"+name+".png";
         doodleElement.classList.add('absolute',`-bottom-[${yVal}px]`, `-left-[${xVal}px]`, `h-[${hVal}px]`)
     }
     
@@ -32,7 +32,7 @@ selfDescriptionContainer.addEventListener('mouseleave', function(){
 
 spotifyContainer.addEventListener('mouseover', function(){ 
     const doodleElement = document.createElement("img");
-    doodleElement.src = "assets/popup/notes.png";
+    doodleElement.src = "/notes.png";
     doodleElement.classList.add('absolute',`top-[40px]`, `-right-[35px]`, `h-[180px]`)
     spotifyContainer.append(doodleElement)
     
