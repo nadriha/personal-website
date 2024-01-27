@@ -9,3 +9,25 @@
         src: url(/assets/fonts/bohemiansoul.otf) format("opentype");
       }
 }
+
+@layer components {
+    .container {
+      @apply flex flex-col rounded-xl shadow-lg ring-1 ring-black/5 h-[300px] p-7 relative transition duration-500 hover:scale-105;
+    }
+
+    .title {
+      @apply font-bohemianSoul text-8xl text-[#aa4465];
+    }
+
+    .logo {
+      @apply text-[#c3dbff] text-5xl;
+    }
+
+    .container-title{
+    @apply text-2xl font-bold font-poppins;
+    }
+
+    .text-container {
+      @apply text-lg font-poppins text-justify;
+    }
+}

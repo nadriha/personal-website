@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        customFont: ['Bohemian Soul', "sans-serif"],
-        // Add more custom font families as needed
+        bohemianSoul: ['Bohemian Soul', "sans-serif"],
+        poppins: ['Poppins', "sans-serif"]
       },
     },
   },

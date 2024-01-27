@@ -3,22 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nadhira's Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="css/global.css">
 </head>
-<body>
-    <header class="flex justify-center">
-        <div class="flex gap-20 border mt-5 py-2 px-10 rounded-full">
+<body class="bg-[#edf0da]">
+    <header class="flex justify-center items-center top-0 fixed w-full">
+        <!-- <div class="flex gap-20 m-5 py-2 px-10 rounded-full bg-[#0B6E4F] text-[#edf0da] font-bold z-99">
             <p>Home</p>
             <p>About</p>
             <p>Project</p>
-            <p>Contact</p>
-        </div>
+        </div> -->
     </header>
-    <section class="flex justify-center w-screen">
+    <section class="flex flex-col justify-center w-full">
         <div class="flex flex-col justify-center items-center h-screen">
-            <p class="font-customFont text-6xl">Hi. I'm Nadhira.</p>
-            <p class="font-customFont text-6xl"> A Learner.</p>
+            <p class="title">Hi. I'm Nadhira.</p>
+            <p class="title"> A Learner.</p>
+        </div>
+    </section>
+    <section class="flex flex-col justify-center mb-0 items-center h-screen" id="about">
+        <p class="font-bohemianSoul text-5xl text-[#aa4465]">About Me</p>
+        <div class="item-center grid grid-cols-3 gap-9 mt-10 m-auto max-w-5xl">
+            <div id="self-desc" class="container gap-2 bg-[#dc758f] col-span-2 ">
+                <p class=" text-[#862e4a] text-3xl font-poppins font-bold">Hey, I’m Nadhira Hafez</p>
+                <p class=" text-[#ffeafa] text-container">A second-year undergraduate student pursuing a Computer Science degree at Universitas Indonesia. </p>
+                <p class=" text-[#ffeafa] text-container">Im thrilled to pushing the limits of what I can do in the exciting world of web development. Let's make some awesome experiences together!</p>
+                <!-- <img src="assets/popup/face.png" class="absolute -top-[80px] -right-14 h-[200px]" alt="">
+                <img src="assets/popup/question.png" class="absolute -bottom-[80px] -left-[80px] h-[200px]" alt=""> -->
+            </div>
+            <div id="spotify" class="container justify-center gap-4 bg-[#0b6e4f]">
+                <p class="container-title text-[#d3fff1]">On Repeat</p>
+                <div class="flex gap-2 p-4 items-center bg-white/20 h-[90px] max-w-[280px] rounded-[40px] ">
+                    <i class='text-6xl text-[#18b885] bx bxl-spotify'></i>
+                    <div>
+                        <p class="text-[#39e2ac] font-bold font-poppins">above the clouds</p>
+                        <p class="text-[#39e2ac] font-bold font-poppins">DAY6</p>
+                    </div>
+                </div>    
+                <!-- <img src="assets/popup/notes.png" class="absolute -top-[80px] -right-20 h-[180px]" alt="">
+                <img src="assets/popup/music.png" class="absolute -bottom-[10px] -left-[50px] h-[200px]" alt=""> -->
+            </div>
+            <div id="skills" class="container bg-[#577399]">
+                <p class="container-title text-[#ddeaff]">Skills</p>
+                <div class="grid grid-cols-4 gap-5 ">
+                    <i class='logo bx bxl-python' ></i>
+                    <i class='logo bx bxl-java' ></i>
+                    <i class='logo bx bxl-javascript' ></i>
+                    <i class='logo bx bxl-django' ></i>
+                    <i class='logo bx bxl-css3' ></i>
+                    <i class='logo bx bxl-tailwind-css' ></i>
+                    <i class='logo bx bxl-flutter' ></i>
+                </div>
+                <!-- <img src="assets/popup/pencil.png" class="absolute -top-[60px] -right-14 h-[180px]" alt="">
+                <img src="assets/popup/laptop.png" class="absolute -bottom-[70px] -left-[95px] h-[250px]" alt=""> -->
+            </div>
+            <div id="connect" class=" gap-4 bg-[#f46036]  col-span-2 container">
+                <p class="container-title text-[#ffeae5]">Let's connect!</p>
+                <p class="text-[#ffeafa] text-container">Join me on my digital adventures!🌐</p>
+                <p class="text-[#ffeafa] text-container mt-0">Explore my thoughts, hobbies, and life snippets in this cozy corner of the internet. Let's connect, share, and inspire each other!🚀</p>
+                <div class="flex gap-5">
+                    <a href="https://twitter.com/nadriha"><i class='text-[#ffeafa] bx text-5xl bxl-twitter'></i></a>
+                    <a href="https://instagram.com/nadhirahfz"><i class='text-[#ffeafa] bx text-5xl bxl-instagram' ></i></a>
+                    <a href="https://www.linkedin.com/in/nadhira-hafez/"><i class='text-[#ffeafa] bx text-5xl bxl-linkedin-square' ></i></a>
+                </div>
+                <!-- <img src="assets/popup/handshake.png" class="absolute -top-[110px] -right-20 h-[330px]" alt=""> -->
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col justify-center gap-10 items-center h-screen " id="about">
+        <p class="font-bohemianSoul text-5xl text-[#aa4465]">My Projects</p>
+        <div class="rounded-xl border border-black h-[600px] w-[1200px] col-span-2 flex justify-center items-center shadow-lg ring-1 bg-white/20 ring-black/5">
+            <p class="text-3xl font-poppins font-bold text-[#aa4465]" >Comming Soon...</p>
         </div>
     </section>
     <script type="module" src="js/main.js"></script>
